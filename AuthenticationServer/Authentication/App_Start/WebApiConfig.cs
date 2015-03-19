@@ -1,9 +1,9 @@
-﻿using System.Linq;
-using System.Net.Http.Formatting;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
-using Newtonsoft.Json.Serialization;
 
-namespace Dijits.Authentication
+namespace Authentication
 {
     public static class WebApiConfig
     {
@@ -19,9 +19,6 @@ namespace Dijits.Authentication
                 routeTemplate: "api/{controller}/{id}",
                 defaults: new { id = RouteParameter.Optional }
             );
-
-            var jsonFormatter = config.Formatters.OfType<JsonMediaTypeFormatter>().First();
-            jsonFormatter.SerializerSettings.ContractResolver = new CamelCasePropertyNamesContractResolver();
         }
     }
 }

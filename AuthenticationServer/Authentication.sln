@@ -5,6 +5,13 @@ VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication", "Authentication\Authentication.csproj", "{B56812B2-6123-47B6-A775-96EF76D7EF26}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Authentication.Tests", "Authentication.Tests\Authentication.Tests.csproj", "{DD77BB9C-F301-405E-9CF0-78DFBD47A98D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{01988493-8EC4-4D63-A1FF-4E24A147D233}"
+	ProjectSection(SolutionItems) = preProject
+		.nuget\packages.config = .nuget\packages.config
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +22,10 @@ Global
 		{B56812B2-6123-47B6-A775-96EF76D7EF26}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56812B2-6123-47B6-A775-96EF76D7EF26}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B56812B2-6123-47B6-A775-96EF76D7EF26}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD77BB9C-F301-405E-9CF0-78DFBD47A98D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD77BB9C-F301-405E-9CF0-78DFBD47A98D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD77BB9C-F301-405E-9CF0-78DFBD47A98D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD77BB9C-F301-405E-9CF0-78DFBD47A98D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

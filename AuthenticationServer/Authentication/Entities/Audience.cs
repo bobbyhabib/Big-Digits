@@ -2,6 +2,9 @@
 
 namespace Dijits.Authentication.Entities
 {
+    /// <summary>
+    /// Verifies which resource audiences.
+    /// </summary>
     public class Audience
     {
         [Key]

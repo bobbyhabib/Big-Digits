@@ -269,7 +269,9 @@ namespace Dijits.Authentication.Controllers
                 return string.Format("Client_id '{0}' is not registered in the system.", clientId);
             }
 
-            if (!string.Equals("http://localhost:11517", redirectUri.GetLeftPart(UriPartial.Authority), StringComparison.OrdinalIgnoreCase))
+
+            // Bobby Habib: Need to feed this from config file.
+            if (!string.Equals("http://localhost:15587", redirectUri.GetLeftPart(UriPartial.Authority), StringComparison.OrdinalIgnoreCase))
             {
                 return string.Format("The given URL is not allowed by Client_id '{0}' configuration.", clientId);
             }
@@ -368,7 +370,7 @@ namespace Dijits.Authentication.Controllers
 
             // var accessToken = StartUp.OAuthBearerOptions.AccessTokenFormat.Protect(ticket);
 
-            var jwt = new CustomJwtFormat("http://localhost:37304/");
+            var jwt = new CustomJwtFormat("http://localhost:30128/");
             var accessToken = jwt.Protect(ticket);
 
             JObject tokenResponse = new JObject(

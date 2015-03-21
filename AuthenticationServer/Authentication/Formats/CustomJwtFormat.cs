@@ -8,6 +8,9 @@ using Thinktecture.IdentityModel.Tokens;
 
 namespace Dijits.Authentication.Formats
 {
+    /// <summary>
+    /// Generates the custom access token using JWT.
+    /// </summary>
     public class CustomJwtFormat : ISecureDataFormat<AuthenticationTicket>
     {
         private const string AudiencePropertyKey = "audience";

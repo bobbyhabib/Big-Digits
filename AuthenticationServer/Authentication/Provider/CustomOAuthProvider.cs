@@ -10,6 +10,9 @@ using Microsoft.Owin.Security.OAuth;
 
 namespace Dijits.Authentication.Provider
 {
+    /// <summary>
+    /// Specify the implementation on how to validate the client and Resource owner user credentials. 
+    /// </summary>
     public class CustomOAuthProvider : OAuthAuthorizationServerProvider
     {
         public override Task ValidateClientAuthentication(OAuthValidateClientAuthenticationContext context)

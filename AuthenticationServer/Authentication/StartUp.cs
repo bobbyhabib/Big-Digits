@@ -57,7 +57,7 @@ namespace Dijits.Authentication
                 TokenEndpointPath = new PathString("/oauth2/token"),
                 AccessTokenExpireTimeSpan = TimeSpan.FromMinutes(30),
                 Provider = new CustomOAuthProvider(),
-                AccessTokenFormat = new CustomJwtFormat("http://localhost:37304/")
+                AccessTokenFormat = new CustomJwtFormat("http://localhost:30128/")
             };
 
             // Token Generation
